@@ -143,21 +143,16 @@ ELEMENT_TYPE& Set::Iterator::operator*() {
 Set::Iterator Set::Iterator::operator++(int) {
     if (_cur->next != nullptr) {
         _cur = _cur->next;
-        return Iterator(_cur);
-    } else {
-        return;
     }
+    return Iterator(_cur);
 }
 
 
 Set::Iterator Set::Iterator::operator--(int) {
     if (_cur->prev != nullptr) {
         _cur = _cur->prev;
-        return Iterator(_cur);
-    } else {
-        return;
     }
-    
+    return Iterator(_cur);
 }
 
 
@@ -187,20 +182,17 @@ ELEMENT_TYPE& Set::Reverse_Iterator::operator*() {
 Set::Reverse_Iterator Set::Reverse_Iterator::operator++(int) {
     if (_cur->prev != nullptr) {
         _cur = _cur->prev;
-        return Reverse_Iterator(_cur);
-    } else {
-        return;
     }
+    return Reverse_Iterator(_cur);
 }
 
 
 Set::Reverse_Iterator Set::Reverse_Iterator::operator--(int) {
     if (_cur->next != nullptr) {
         _cur = _cur->next;
-        return Reverse_Iterator(_cur);
-    } else {
-        return;
+        
     }
+    return Reverse_Iterator(_cur);
 }
 
 
