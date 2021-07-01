@@ -135,6 +135,14 @@ Set::Iterator Set::end() const {
 }
 
 
+Set::Reverse_Iterator::Reverse_Iterator() {
+    _cur = nullptr;
+}
+
+Set::Reverse_Iterator::Reverse_Iterator(Elem *cur) {
+    _cur = cur;
+}
+
 Set::Reverse_Iterator Set::rbegin() const {
     return Reverse_Iterator(_tail->prev);
 }
