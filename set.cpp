@@ -108,6 +108,10 @@ Set::Iterator() {
     _cur = nullptr;
 }
 
+Set::Iterator(Elem *cur) {
+    _cur = cur;
+}
+
 Set::Iterator Set::find(ELEMENT_TYPE info) const {
     Set::Iterator it = Iterator(_head->next);
 
