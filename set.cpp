@@ -104,6 +104,10 @@ int Set::size() const {
     return _size;
 }
 
+Set::Iterator() {
+    _cur = nullptr;
+}
+
 Set::Iterator Set::find(ELEMENT_TYPE info) const {
     Set::Iterator it = Iterator(_head->next);
 
