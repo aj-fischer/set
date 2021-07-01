@@ -104,11 +104,11 @@ int Set::size() const {
     return _size;
 }
 
-Set::Iterator() {
+Set::Iterator::Iterator() {
     _cur = nullptr;
 }
 
-Set::Iterator(Elem *cur) {
+Set::Iterator::Iterator(Elem *cur) {
     _cur = cur;
 }
 
