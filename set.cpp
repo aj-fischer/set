@@ -6,8 +6,6 @@ Set::Set() {
     _size = 0;
     _head = new Elem();
     _tail = new Elem();
-    _head = nullptr;
-    _tail = nullptr;
     _head->next = _tail;
     _tail->prev = _head;
 }
