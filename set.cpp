@@ -301,6 +301,7 @@ Set operator&(const Set& lhs, const Set& rhs) {
             }
             left_it++;
         }
+        left_it = lhs.begin();
         right_it++;
     }
     return s;
