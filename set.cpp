@@ -343,6 +343,7 @@ Set operator-(const Set& lhs, const Set& rhs) {
         if (valInSet == false) {
             s.insert(*left_it);
         }
+        right_it = rhs.begin();
         left_it++;
     }
     return s;
