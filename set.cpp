@@ -368,6 +368,7 @@ bool operator==(const Set& s1, const Set& s2) {
         if (valInSet != true) {
             return false;
         }
+        s2_it = s2.begin();
         s1_it++;
     }
     return true;
